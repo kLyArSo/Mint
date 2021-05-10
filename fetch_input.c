@@ -47,7 +47,7 @@ char    *my_realloc(char    *str, char  c)
     }
     result[i] = c;
     free(str);
-    str == NULL;
+    str = NULL;
     return (result);
 }
 

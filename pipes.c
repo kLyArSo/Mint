@@ -87,6 +87,7 @@ t_redirections    *fetch_redirection(t_linedata *data, t_redirections *ret, int 
     while(1)
     {
         if(data->redirection == 1)
+        {
             if (counter == 0)
             {
                 counter = 1;
@@ -100,6 +101,7 @@ t_redirections    *fetch_redirection(t_linedata *data, t_redirections *ret, int 
                 ptr = ptr->next;
                 data = a_s(data, ptr);
             }
+        }
         data = data->next;
         if (data == NULL)
             break   ;

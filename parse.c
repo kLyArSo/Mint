@@ -58,4 +58,5 @@ char     *parse(char *input, t_format    *ptr)
         ft_freedom(ptr);
         return (NULL);
     }
+    return ("DONE");
 }

@@ -21,7 +21,7 @@ void    free_tpipes_contents(t_pipes    *ptr)
     while(1)
     {
         free(ptr->line);
-        ptr->line == NULL;
+        ptr->line = NULL;
         free_sliced_line_strings(ptr->sliced_line);//done
         free_sliced_line_nodes(ptr->sliced_line);//done
         free_targs_nodes(ptr->arguments);//done
@@ -37,7 +37,7 @@ void    free_tformat_contents(t_format *ptr)
     while(1)
     {
         free(ptr->line);
-        ptr->line == NULL;
+        ptr->line = NULL;
         free_sliced_line_strings(ptr->sliced_line);//done
         free_sliced_line_nodes(ptr->sliced_line);//done
         free_targs_nodes(ptr->arguments);//done
